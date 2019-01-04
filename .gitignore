@@ -1,0 +1,14 @@
+/bin/
+/target/
+
+# editor backup files
+*~
+*.bak
+*.swp
+
+# sundry useless files
+*.out
+mvn*.log
+
+# Mac idiosyncrasies
+.DS_Store

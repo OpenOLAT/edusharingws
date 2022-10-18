@@ -1,7 +1,7 @@
 
 package org.edu_sharing.webservices.alfresco.extension;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**

@@ -1,10 +1,10 @@
 
 package org.edu_sharing.webservices.tracking;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -98,8 +98,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TrackingException }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link TrackingException }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link TrackingException }{@code >}
      */
     @XmlElementDecl(namespace = "http://tracking.webservices.edu_sharing.org", name = "fault")
     public JAXBElement<TrackingException> createFault(TrackingException value) {

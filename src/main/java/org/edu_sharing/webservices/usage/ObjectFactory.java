@@ -1,10 +1,10 @@
 
 package org.edu_sharing.webservices.usage;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 import org.edu_sharing.webservices.authentication.AuthenticationException;
 
 
@@ -148,8 +148,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UsageException }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link UsageException }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link UsageException }{@code >}
      */
     @XmlElementDecl(namespace = "http://usage.webservices.edu_sharing.org", name = "fault")
     public JAXBElement<UsageException> createFault(UsageException value) {
@@ -157,8 +161,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AuthenticationException }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link AuthenticationException }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link AuthenticationException }{@code >}
      */
     @XmlElementDecl(namespace = "http://usage.webservices.edu_sharing.org", name = "fault1")
     public JAXBElement<AuthenticationException> createFault1(AuthenticationException value) {

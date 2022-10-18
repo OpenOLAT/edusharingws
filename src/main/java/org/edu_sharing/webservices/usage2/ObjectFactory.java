@@ -1,10 +1,10 @@
 
 package org.edu_sharing.webservices.usage2;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -114,8 +114,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Usage2Exception }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Usage2Exception }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Usage2Exception }{@code >}
      */
     @XmlElementDecl(namespace = "http://usage2.webservices.edu_sharing.org", name = "fault")
     public JAXBElement<Usage2Exception> createFault(Usage2Exception value) {

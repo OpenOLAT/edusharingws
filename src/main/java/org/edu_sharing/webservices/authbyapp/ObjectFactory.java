@@ -1,10 +1,10 @@
 
 package org.edu_sharing.webservices.authbyapp;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 import org.edu_sharing.webservices.authentication.AuthenticationException;
 
 
@@ -67,8 +67,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AuthenticationException }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link AuthenticationException }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link AuthenticationException }{@code >}
      */
     @XmlElementDecl(namespace = "http://authbyapp.webservices.edu_sharing.org", name = "fault")
     public JAXBElement<AuthenticationException> createFault(AuthenticationException value) {
